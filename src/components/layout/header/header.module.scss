@@ -1,0 +1,12 @@
+@import 'src/styles/mixins';
+
+.header {
+	@include flex-horizontal-center;
+	justify-content: space-between;
+	border-bottom: 1px solid $out-line;
+	width: 100%;
+	max-width: 1718px;
+	height: 100px;
+	margin: 0 auto;
+
+}

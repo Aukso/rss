@@ -1,0 +1,12 @@
+
+@import 'src/styles/mixins';
+.burger {
+  width: 48px;
+  height: 46px;
+   a{
+    &:hover{
+    border-color: transparent;   
+
+   }
+}
+}

@@ -1,0 +1,95 @@
+@import 'src/styles/mixins';
+.wrap_center{
+
+.wrap_midlee_content {
+  max-width: 1920px;
+  color: $white;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+    .top_banners_text {
+    font-size: 12px;
+    opacity: 0.25;
+    text-align: left;
+    width: 70%;
+    text-transform: uppercase;
+    color: $terracotta;
+    padding-top: 100px;
+}
+    .fly_text {
+    
+    font-size: 96px;
+    line-height: 1.2;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 1720px;
+    width: 70%;
+    
+  }
+}
+  .line_box{
+    width: 0;
+    height: 5px;
+    background: #fdfdfd;
+    margin-left: 15.2%;
+    margin-top: 24px;
+  }
+  .wrap_bottom_text {
+  grid-area: 2 / 2 / 3 / 3;
+  color: $white;
+  font-size: 80px;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: 263px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+    .bottom_center{
+    color:$terracotta ;
+    font-size: 200px;
+    font-weight: 500;
+  }
+    .bottom_one {
+    font-size: 60px;
+    margin-left: 32px;
+    >span{
+      color:$terracotta;
+      font-size: 60px;
+      text-transform: uppercase;
+    }
+}
+  .bottom_right{
+    
+    >.button {
+    display: flex;
+    justify-content: center;
+    width: 248px;
+    height: 56px;
+    background: $terracotta;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    z-index: 9;
+    margin-top: 18px;
+ 
+ 
+      >p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    
+  }
+
+  }
+}
+}
+
+}

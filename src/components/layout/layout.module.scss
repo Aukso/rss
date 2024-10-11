@@ -1,0 +1,48 @@
+@import 'src/styles/mixins';
+.layout{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: transform 0.4s;
+	
+
+	video {
+    position: absolute;
+    right: 0;
+		left: 10%;
+    height: 100vh;
+    z-index: -1;
+}
+	main {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+}
+.bg_one{
+	@extend .layout;
+	background:url(img/bg_one.png)no-repeat center;
+	
+}
+.bg {
+	@extend .layout;
+	background:url(img/bg_two.png)no-repeat center;
+}
+.bg_two {
+	@extend .layout;
+	background:url(img/bg_top_st.png)no-repeat center;
+}
+.bg_three{
+	@extend .layout;
+	background:url(img/bg_pot.png)no-repeat center;
+}
+
+.on{
+	@extend .layout;
+	transform: translateX(0);
+}
+.off{
+	@extend .layout;
+	transform: translateX(100%);
+}

@@ -1,0 +1,23 @@
+@import 'src/styles/mixins';
+.topmenu {
+  @include grid-horizontal;
+  width: 75%;
+  
+  nav{
+    max-width: 460px;
+    width: 100%;
+    text-transform: uppercase;
+    justify-self: end;
+
+  }
+  ul{
+    @include flex-horizontal-center;
+    gap:38px;
+  }
+  li {
+    display: flex;
+  }
+  a{
+    font-size: 12px;
+  }
+}
